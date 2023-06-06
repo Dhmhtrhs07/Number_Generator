@@ -1,0 +1,50 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Generate a n-digit number using JavaScript
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+        #demo {
+            color: green; 
+            font-size: 29px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>  
+      Generator 
+    </h1>
+    <p>
+          
+            
+     Πατα για να σου δωσει αριθμο
+    </p>
+    <button onclick="gfg();">
+        click here
+    </button>
+    <p id="demo">
+    </p>
+    <script>
+        var up = document.getElementById('GFG_UP');
+        var down = document.getElementById('demo');
+  
+        function gfg() {
+            var minm = 1;
+            var maxm = 50;
+            down.innerHTML = Math.floor(Math
+            .random() * (maxm - minm + 1)) + minm;
+        }
+    </script>
+</body>
+  
+</html>
